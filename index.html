@@ -40,9 +40,13 @@
 
           <div class="col-xl-2 col-md-4 mt-4">
             <a
-              class="btn btn-lg btn-info text-nowrap"
               href="#reserveForm"
-              type="button"
+              role="button"
+              class="btn btn-lg btn-info text-nowrap"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              data-html="true"
+              title="Or call us at <br /><strong>1-206-555-1234</strong>"
               >Reserve Campsite</a
             >
           </div>
@@ -266,5 +270,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
